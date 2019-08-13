@@ -1,13 +1,24 @@
 # 项目简介
-本项目是ecommerce系统的订单（Order）子系统，用于接受用户订单。
+本项目是Ecommerce系统的订单（Order）子系统，用于接受用户订单。
+
+Ecommerce项目包括：
+
+|代码库|用途|地址|
+| --- | --- | --- |
+|order-backend|Order服务|[https://github.com/e-commerce-sample/order-backend](https://github.com/e-commerce-sample/order-backend)|
+|product-backend|Product服务|[https://github.com/e-commerce-sample/product-backend](https://github.com/e-commerce-sample/product-backend)|
+|inventory-backend|Inventory服务|[https://github.com/e-commerce-sample/inventory-backend](https://github.com/e-commerce-sample/inventory-backend)|
+|common|共享依赖包|[https://github.com/e-commerce-sample/common](https://github.com/e-commerce-sample/common)|
+|devops|基础设施|[https://github.com/e-commerce-sample/devops](https://github.com/e-commerce-sample/devops)|
 
 # 技术选型
-Spring Boot、Gradle、MySQL、Junit 5、Rest Assured、Docker
+Spring Boot、Gradle、MySQL、Junit 5、Rest Assured、Docker、RabbitMQ
 
 # 本地构建
 
 在本地构建之前必须完成以下步骤：
-- 命令行进入[`ecommerce-sample/devops`](https://github.com/e-commerce-sample/devops)项目的跟目录
+- Pull最新[devops](https://github.com/e-commerce-sample/devops)代码
+- 命令行进入`devops`的`ecommerce-sample/devops/local/rabbitmq`目录
 - 运行`./start-rabbitmq.sh`，用于启动RabbitMQ，整个Ecommerce下的所有服务只需启动RabbitMQ一次
 
 |功能|命令|备注|
